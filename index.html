@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--* Informacion para los buscadores:SEO(conjuto de tecnicas que optimiza los motores de busqueda)-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="William Alexander Suarez Caguana" />
+    <meta name="description" content="Portafolio web" />
+    <meta name="keywords" content="acerca, cursos, js, sintaxis, ejercicios" />
+    <!--* Es la ventana que define el area de la pantalla que se esta viendo dentro del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--* Establece un vínculo con otro recurso -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/introduccion.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <!--? relaciona un archivo js -->
+    <script defer src="./js/main.js" type="module"></script>
+
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navegacion">
+        <a href="#" class="logo">
+          <img
+            width="50"
+            height="40"
+            src="./img/William.jpeg"
+            alt="No se encuentra el logo de Javascript"
+          />
+          <div class="logo">WILLIAM SUAREZ</div>
+        </a>
+        <ul class="menu">
+          <li><a href="#perfil">PERFIL</a></li>
+          <li><a href="#experiencia">EXPERIENCIA</a></li>
+          <li><a href="#habilidades">HABILIDADES</a></li>
+          <li><a href="#funciones">CURSO</a></li>
+          <li><a href="#colecciones">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="sintaxis">
+        <div class="introduccion">
+          <div class="introduccion-informacion">
+            <h2>Hola, soy William Suarez</h2>
+            <p>
+              Soy estudiante de 4to semestre de la universidad estatal de
+              milagro, tengo 23 años y soy del canton bucay provincia del
+              Guayas.
+            </p>
+          </div>
+
+          <img src="./img/William.jpeg" alt="" />
+        </div>
+      </section>
+
+      <section class="sintaxis" id="clases">
+        <h2> EXPERIENCIA </h2>
+        <pre class="js">
+          <code id="clase" >
+            
+          </code>
+        </pre>
+      </section>
+      <section class="sintaxis" id="condiciones">
+        <h2>HABILIDADES</h2>
+        <pre class="js">
+          <code id="condicion" >
+            
+          </code>
+        </pre>
+      </section>
+      <section class="sintaxis" id="funciones">
+        <h2>CURSO</h2>
+        <pre class="js">
+          <code id="funcion" >   
+            
+          </code>
+        </pre>
+        <article class="form-container">
+          <div class="form-header">
+            <h2>CONTACTO</h2>
+          </div>
+          <form action="" id="user-form" class="form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombres"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                title="El nombre solo acepta letras"
+                pattern="^[A-Za-zÑñáéíóú\s]+$"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="emails"
+                id="email"
+                placeholder="Escribe tu email"
+                title="Email ingresado es incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+                \>
+            <div class="form-group">
+              <label for="sugerencia">Mensaje</label>
+              <textarea
+                name="sugerencias"
+                for="sugerencia"
+                id="sugerencia"
+                rows="3"
+                placeholder="Envianos tu sugerencia del proceso"
+                title="tu comentario no debe exceder de 255 caracteres"
+                data-pattern="^.{2,255}$"
+                required
+              ></textarea>
+            </div>
+            <div class="form-check">
+              <label
+                >Activo
+                <input type="checkbox" id="activo" value="activo" checked />
+              </label>
+            </div>
+
+            <button
+              id="enviar"
+              type="submit"
+              name="enviar"
+              value="enviar datos"
+            >
+              Enviar
+            </button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
